@@ -1,16 +1,17 @@
 .myAvatar {
     margin: 50px 0;
-    width: 600px;
+    width: 400px;
     z-index: 10;
     border-radius: 10%;
     box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.4);
 }
 
 body {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
         /*    background-color: #1f1f1f;
             background-size: 7px 7px;
             background-image: repeating-linear-gradient(45deg, #373738 0, #373738 0.7000000000000001px, #1f1f1f 0, #1f1f1f 50%);*/
@@ -24,10 +25,10 @@ body {
 
 .form-floating .form-control {
     padding: 10px;
-    border: 2px solid #de63a3;
+    border: 2px solid black;
     border-radius: 10px;
     transition: box-shadow 0.3s;
-    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .form-floating .form-control:focus {
