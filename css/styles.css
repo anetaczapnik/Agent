@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Glitch';
+    src:  url('myfont.woff2') format('woff2'),
+    url('myfont.woff') format('woff');
+}
+
 .myAvatar {
     margin: 50px 0 50px 30px;
     width: 400px;
@@ -11,9 +17,10 @@
 body {
     background-image: url("../img/background3.png");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
         /*    background-color: #1f1f1f;
             background-size: 7px 7px;
             background-image: repeating-linear-gradient(45deg, #373738 0, #373738 0.7000000000000001px, #1f1f1f 0, #1f1f1f 50%);*/
@@ -41,5 +48,36 @@ body {
 @media (min-width: 1250px) {
     .container {
         width: 700px;
+        height: 92vh;
     }
+}
+
+.footer_container {
+    width: 100vw;
+    height: 6vh;
+    background-color: #191919;
+    opacity: 0.9;
+    background-size: 9px 9px;
+    background-image: repeating-linear-gradient(45deg, #323232 0, #323232 0.9px, #191919 0, #191919 50%);
+    color: deeppink;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_link {
+    margin: 10px;
+    color: deeppink;
+    text-decoration: none;
+    align-self: center;
+}
+
+.footer_link:first-of-type {
+    padding-left: 30px
+}
+
+.footer_link:last-of-type {
+    padding-right: 30px
 }
