@@ -12,14 +12,29 @@ body {
         background-image: repeating-linear-gradient(45deg, #373738 0, #373738 0.7000000000000001px, #1f1f1f 0, #1f1f1f 50%);*/
 }
 
-@media (min-width: 800px) {
-    .container {
-        width: 700px;
-    }
+@media (max-width: 800px) {
 
     .container_avatar {
-        height: 20vh;
-        overflow: hidden;
+        height: 30vh;
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+
+    .myAvatar {
+        width: 60vw;
+        border-radius: 10%;
+        border: 1px solid rgba(24, 24, 24, 0.8);
+        box-shadow: 0 0 15px 15px rgba(24, 24, 24, 0.8);
+        float: left;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .container_avatar {
+        height: 30vh;
+        width: 80vw;
+        margin-bottom: 10px;
     }
 
     .myAvatar {
@@ -32,18 +47,8 @@ body {
     }
 }
 
-.container_avatar {
-    height: 30vh;
-    width: 80vw;
-    margin-bottom: 10px;
-}
-
-.myAvatar {
-    width: 60vw;
-    border-radius: 10%;
-    border: 1px solid rgba(24, 24, 24, 0.8);
-    box-shadow: 0 0 15px 15px rgba(24, 24, 24, 0.8);
-    float: left;
+.container {
+    width: 700px;
 }
 
 .container_filler {
