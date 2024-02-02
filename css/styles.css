@@ -19,22 +19,35 @@ body {
     }
 
     .container_avatar {
+        position: relative;
         height: 30vh;
-        width: 75vw;
+        width: 70vw;
         margin: 0 auto;
+        overflow: visible;
+        padding: 10px;
     }
 
     .myAvatar {
-        width: 150px;
-        border-radius: 10%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 90%;
+        object-fit: contain; /* Cover ensures the image covers the area without distortion */
+        border-radius: 10%; /* Maintains your styling */
         border: 1px solid rgba(24, 24, 24, 0.8);
         box-shadow: 0 0 15px 15px rgba(24, 24, 24, 0.8);
-        float: left;
-        margin: 10px 0;
     }
 
     .container_footer {
         font-size: 10px;
+    }
+
+    .footer_link:first-of-type {
+        padding-left: 30px
+    }
+
+    .footer_link:last-of-type {
+        padding-right: 30px
     }
 }
 
@@ -45,21 +58,43 @@ body {
     }
 
     .container_avatar {
+        position: relative;
         height: 30vh;
-        width: 700px;
+        width: 600px;
         margin: 0 auto;
+        overflow: visible;
+        padding: 10px;
     }
-    .myAvatar {
+/*    .myAvatar {
         margin: 50px 0 0 20px;
         width: 20vw;
         border-radius: 10%;
         border: 1px solid rgba(24, 24, 24, 0.8);
         box-shadow: 0 0 15px 15px rgba(24, 24, 24, 0.8);
         float: left;
+    }*/
+
+    .myAvatar {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 90%;
+        object-fit: contain; /* Cover ensures the image covers the area without distortion */
+        border-radius: 10%; /* Maintains your styling */
+        border: 1px solid rgba(24, 24, 24, 0.8);
+        box-shadow: 0 0 15px 15px rgba(24, 24, 24, 0.8);
     }
 
     .container_footer {
         font-size: 30px;
+    }
+
+    .footer_link:first-of-type {
+        padding-left: 100px
+    }
+
+    .footer_link:last-of-type {
+        padding-right: 100px
     }
 }
 
@@ -151,10 +186,3 @@ body {
     align-self: center;
 }
 
-.footer_link:first-of-type {
-    padding-left: 30px
-}
-
-.footer_link:last-of-type {
-    padding-right: 30px
-}
